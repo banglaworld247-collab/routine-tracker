@@ -1,4 +1,4 @@
-const API = "https://script.google.com/macros/s/AKfycbw8SWnQ12llcwwGHNynHrMrrfV_ZpsT9vsOdlihD0X_zEOBScNmFf4ta6goMgVnbB9s/exec";
+const API = "https://script.google.com/macros/s/AKfycbzi-S0b5FHHj8ogd6XrOk11aziHK9HW_5f0gQ7z1Oc84pGYm5eSDoxSSMltAr7KYqLO/exec";
 
 function register() {
   // Select the elements properly
@@ -30,3 +30,4 @@ function register() {
     alert("API error - check console");
   });
 }
+
