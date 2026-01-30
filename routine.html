@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Routine Builder</title>
+  <link rel="stylesheet" href="css/app.css">
+  <style>
+    .task {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      margin-top: 10px;
+      padding: 12px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: #020617;
+    }
+    .task input {
+      flex: 1;
+      margin: 0;
+    }
+    .task button {
+      width: auto;
+      padding: 8px 12px;
+      background: #ef4444;
+    }
+    .add {
+      background: #16a34a;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+
+<body>
+<div class="container">
+  <h1>Your Routine</h1>
+  <p>Customize your daily system</p>
+
+  <div id="taskList"></div>
+
+  <button class="add" onclick="addTask()">+ Add Task</button>
+  <button onclick="saveRoutine()">Save Routine</button>
+</div>
+
+<script src="js/routine.js"></script>
+</body>
+</html>

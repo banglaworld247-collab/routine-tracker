@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Dashboard</h1>
+  <p id="date"></p>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:20px 0">
+    <div class="card">
+      <h2 id="streak">🔥 0</h2>
+      <p>Day Streak</p>
+    </div>
+    <div class="card">
+      <h2 id="avg">0%</h2>
+      <p>Weekly Avg</p>
+    </div>
+  </div>
+
+  <canvas id="chart" height="160"></canvas>
+
+  <hr style="opacity:.2;margin:20px 0">
+
+  <h3>Today's Routine</h3>
+  <div id="tasks"></div>
+
+  <button onclick="location.href='routine.html'"
+          style="background:#334155;margin-top:10px">
+    Edit Routine
+  </button>
+
+  <button onclick="submitDay()">Submit Today</button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>

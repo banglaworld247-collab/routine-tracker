@@ -1,0 +1,95 @@
+:root {
+  --bg: #020617;
+  --card: #020617;
+  --border: #1e293b;
+  --primary: #3b82f6;
+  --success: #22c55e;
+  --text: #e5e7eb;
+  --muted: #94a3b8;
+  --radius: 14px;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, #020617, #000);
+  color: var(--text);
+}
+
+.container {
+  max-width: 420px;
+  margin: 80px auto;
+  background: rgba(2,6,23,.85);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+p {
+  text-align: center;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+input {
+  width: 100%;
+  padding: 14px;
+  margin-top: 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: #020617;
+  color: var(--text);
+}
+
+button {
+  width: 100%;
+  margin-top: 18px;
+  padding: 14px;
+  border-radius: 10px;
+  border: none;
+  background: var(--primary);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: .9;
+}
+
+.link {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.link a {
+  color: var(--primary);
+  text-decoration: none;
+}
+.card {
+  padding: 16px;
+  border-radius: 12px;
+  background: #020617;
+  border: 1px solid var(--border);
+  text-align: center;
+}
+.card h2 {
+  margin: 0;
+  font-size: 26px;
+}
+.card p {
+  margin: 4px 0 0;
+  font-size: 13px;
+  color: var(--muted);
+}
