@@ -1,4 +1,4 @@
-const API = "https://script.google.com/macros/s/AKfycbwDX2OJx6aWWd_kSWYMStaIENLPbFb-O1S-i0hTPpX98UL9JkT7MJuSMIOYMnUHNjLW/exec";
+const API = "https://script.google.com/macros/s/AKfycbwwRO1RdyAPdHO8oVp1g_iCT0CSt_a9Zl6XWj7ZAg5B3Q3W8alqTus8o9D_jWAfxulu/exec";
 
 function register() {
   fetch(API, {
@@ -17,6 +17,7 @@ function register() {
   })
   .catch(() => alert("API error"));
 }
+
 
 
 
