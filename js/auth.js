@@ -1,4 +1,4 @@
-const API = "https://script.google.com/macros/s/AKfycbz_zV1J2Q26_cSOpGYol8Xs78gNlqReAoOm8QOjSy4VcL5LvU6KVptV0ezDO5T0Smw3/exec";
+const API = "https://script.google.com/macros/s/AKfycbw8SWnQ12llcwwGHNynHrMrrfV_ZpsT9vsOdlihD0X_zEOBScNmFf4ta6goMgVnbB9s/exec";
 
 function register() {
   const nameField = document.getElementById("name");
@@ -27,6 +27,7 @@ function register() {
       alert("API error - check console");
     });
 }
+
 
 
 
