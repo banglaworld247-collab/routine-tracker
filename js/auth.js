@@ -3,7 +3,6 @@ const API = "https://script.google.com/macros/s/AKfycbwDX2OJx6aWWd_kSWYMStaIENLP
 function register() {
   fetch(API, {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
       action: "register",
       name: name.value,
@@ -16,6 +15,8 @@ function register() {
     if (res.success) location.href = "login.html";
     else alert(res.message);
   })
-  .catch(err => alert("API error"));
+  .catch(() => alert("API error"));
 }
+
+
 
